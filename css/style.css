@@ -1,8 +1,10 @@
 body {
   padding-top: 30px;
+  background-color: black;
+
 }
 
-body > div > canvas{
+canvas{
   display:block;
   vertical-align:bottom;
   position: fixed;
@@ -23,6 +25,23 @@ hr {
   
   margin-left: auto;
   margin-right: auto;
+}
+
+h1 {
+  color: #3EE33E;
+}
+
+#particles-js {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -200;
+
 }
 
 .portfolio-item {
@@ -55,21 +74,21 @@ hr {
     content: '';
     height: 100%;
     left: 0;
-    opacity: 0.7;
+    
     position: absolute;
     top: 0;
     width: 100%;
 }
 
 .grad::after {
-    background: radial-gradient( circle at top, #0F420F, #000600 );
+    background: radial-gradient( circle at top, #001a00, #000600 );
 }
 
 .grad{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -100;
+  z-index: -300;
   width: 100%;
   height: 100%;
 }
