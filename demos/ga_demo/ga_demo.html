@@ -1,55 +1,0 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Genetic Algorithm Demo</title>
-    <style>
-        * {padding: 0; margin: 0; }
-        html, body {width:  100%;height: 100%;margin: 0px;text-align: center;overflow: hidden;}
-        canvas { background: #eee; display: block; margin: 0 auto; }
-    </style>
-</head>
-<body>
-<div style="width: 500px; margin: auto;">
-<canvas id="idCanvas" width="500" height="500"></canvas>
-
-<label>Draw</label>
-<input type="checkbox" id="drawCheckbox" checked="checked">
-<br/>
-<label>Run</label>
-<input type="checkbox" id="runCheckbox" checked="checked">
-<br/>
-<label>Speed</label>
-<select id="speedDropdown">
-<option value="1">1</option>
-<option value="10" selected>10</option>
-<option value="100">100</option>
-<option value="1000">1000</option>
-</select>
-<br/>
-<br/>
-<button id="jump" onclick="ab()">Jump 50 generations</button>
-<br/>
-<br/>
-<label>Black tile: wall</label>
-<br/>
-<label>Green tile: grass</label>
-<br/>
-<label>Gray tile: road</label>
-<br/>
-<br/>
-<label>It is a bit random, if the results are bad in later generations => refresh the page to restart the genes randomly.</label>
-</div>
-<script>
-eval((function(s){var a,c,e,i,j,o="",r,t="¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ#%'@^`~";for(i=0;i<s.length;i++){r=t+s[i][2];a=s[i][1].split("");for(j=a.length - 1;j>=0;j--){s[i][0]=s[i][0].split(r.charAt(j)).join(a[j]);}o+=s[i][0];}var p=5430;var x=function(r){var c,p,s,l='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789';if(r<63)c=l.charAt(r);else{r-=63;p=Math.floor(r/63);s=r%63;c=l.charAt(p)+l.charAt(s)}return c;};a=o.substr(p).split(':');r=a[1].split('?');a=a[0].split('?');o=o.substr(0,p);if(!''.replace(/^/,String)){var z={};for(i=0;i<137;i++){var y=x(i);z[y]=r[i]||y}t=/\b\w\w?\b/g;y=function(a){return z[a]||a};o=o.replace(t,y);}else{for(j=a[a.length-1]-1;j>=0;j--){if(r[j])o=o.replace(new RegExp('\b'+(j<63?c.charAt(j):c.charAt((j-63)/63)+c.charAt((j-63)%63))+'\b','g'),r[j])}}return o.replace(//g,"\"");})([["$_=b(nØbf(ba(Ú)==string)×Ú.split().%verse®.join(Ê×Ú};$_§1=[nwodporDdeeps,dedaoLtnetnoCMODnoitGssìif gvA,xobkcehCwd];»cÕidCanvas),d=c.getCont#(2d),eµC,f=25,g=bj,h=bj,k,l,m=4,n.001,o,p=1,q=2,r=3,s,t=1,u=2,v=3,w=4,z=5,A=24,B=bk,C,D=8,E=6,F=3,G,H=1,I=2,J=512,K;b LôÑBÑOÑWÑ5Ø¦SµrßRµBßUµOßTµWßhµ5óMÛa.x=x;Þ=yßhº4¹;a.bhµrßsß3ºD¹ßAÀ(DÊ«Då¦A­À(EÊaà:a0Ñu:a0}}}¦7Á«D©à:¥t(D¹Ñu:¥t(F¹}ábÁ«D©½ç¨yºD¹É;ç¨uºF¹Éág=b¼BØ»aOéd)ÑWº¥q®*D*E)Ñ5;«D©½îy=¦¨y):ëyµB§¨y;îu=¦¨u):ëuµB§¨u}ÇO}ßJÁ·ÞïÞµ"+
-".y-Ìªpðx+ÌÞµ.y+Ìªrðx-Ì;9}}ßZµ0ïÜ·Þû])ªpö+1][Þ])Ü·Þ+1])ªröû][Þ]Ê9}bf((!æ§m)&&Ý!=z)Øæ§l=w}else bfÝ==tØ»aO=P¼BÊ«aO.lengthåÝ!=uÐ(¦h=µ?Ý=u):(¦h==Q¼)?Ý=vÉÉ}ÇB§lÈNôØ¦wµrßFßz`wåúédÊú§7®}¦EÁ«¦wåk[ú.x][ú.y}}ßVÁ«¦òõ;be(!â]§mØ»õ}ú.x=xßz­.y=y;â±}};a.%locateÁ¦E®ßV®}ßI=2ÑOº¦w¹ÑW=¦zÏ;«æ©i aOº¦w¹;(¦zÏ§s>aW§s)?¼W=¦zÏÉÇW}ßY`òaO=¦I®ÑW=¦Iæ­µO.bg¼WÊæ­.bb®}¦zµBßF++}ßP;«¦w©B+=ú§sÇB/¦wÈOôØbf¼0=µr||object!=ba )×;»æµr.constructorax(»aO in Øô.hasOwnProperty¼O))?æÏµrÏ:0ÇBóPôØ»æÀ«må(ô.x>=£S÷>=£R)Ð(ô.x<=£U"+
-"÷<=£T))?¼B.push(l­)ÉÉ;×æÈQôØaGôÅ×qªp:×r×oªr:×p;9ÈRþaG(kÖ§lVÍg%en)ªz:VÍblack)ªt:VÍg%yÊ9}}ÈS®{»=yellow;«m©G(£hÅýÔRÃû¶Ã¶Ã+1ÂÃ*f-2¢¸+Âã¢o¬-Âã¢¾®ýÔRÃ-2¶Ãû¶ÃÂ²2¢¸+Âê-Â²1¢¾®ªp£Tù-2Ã¶ûÃ¶Ã2ñ¸ã*Â¤¸®ªr£TùûÃ¶Ã¶+1ÃÑr¤p(¤H¬-2ño¬û*fã*Â¤o¬û*f9}ÈTxÎ.xÃÎ.yÑrÎ§hÑBÎ.bh;aGôÅd§¿ÂÃ¢¸ê²1Ë®ªp:d§¿1ño¬êÃË®d§¿ÂêÃ¢¸ÃË®ªr:d§p(¤H¬²Â¤¸Ã¢¸²1Ë9}ÈU®{d.font=16px Arial;d§n=white;d§82)+C§F,8,bj¤83)+C§P®,c.bdû28,bj)óVbi¬Ã*f,f,fWbi¬+f/4²f/4,Â,ÂXþ(kÖ§mÐWÍblue)É}ÈYÎÑB=´3ÑO=´Z®ÑWyÑ5u;´3µW;aG¼5Øaj G:"+
-"aG¼O´JÆªtuvz:Æªw:Æ;9;default:9}b%ak;aj H:Æ;´h--;(´h<0Ð´h=3ÉªI:Æ;´h++;(´h>3Ð´hÉ;9}ÈZ®{d.cleRect(0,0,c.bd,c.heightÊRSTU®óaa®{kÀ(gÊ«gåk­À(hÊaÄkÖ={al:sÑm:a_,x:iÃ:j}}}lÀ(mÊl[0Ù3,7,bc,oÊl[1Ùø7,pÊl[2]µK L(13,ø17,qÊl[3Ù1ø17,rÊ«m©x(»x=£S;x<£U;x³ax(»y=£R;y<£T;y³â]§l=t}}}«gåk­[0Ó­[0±;k­[hûÓ­[hû±}aÄk[0][jÓ[0][j±;kÓ±}CµK N(AÊC§V®}aL§ddEvìListr1),b®{aa(b a6®{aXÕ$_(4)Ê¼X§9ÐZ®É;bf(eØa2=O(C§FÊeµC;be¼2+50>C§FØYK++;@V®É}}aQÕaQÊ¼Q§9ÐY®,K++,@V®ÉÉ;BÕ$_(0)).value;setTimeout¼6,bk/B)})®}Êb ab®{eµ_}0?"+
-"137:this?funcä°°°°°°°??BOLIP_1Mf5_KkeIfLSS°???b%ak°?di%cä?v?casíM~cellTypíisEmpt^StylílineTo?beginP~random?ac?fitness?floor?n#Acä?%turn?popSizífor?n#Statícs?geníad?falsígetElemìById?clePosiäs?graä?switch?moveTo?selectByTournamì?goForwd?new?documì?Arra^?aícalculateAverageFitness?runCheckbox?minY?minX?maxY?maxX?placíaf?drawCheckbox?evolvícellInFront?truínull?list?currìGen?statícloseP~ag?mainLoop?gratífillT#?checked?typeof?mutatí17?width?whilíif?cross?color?%ct?20?1000",
-"ax(ai i=*f);d.al[i].a);d.aak.aa.a.aA[i][j]§;i++){a;9;aj ¡0;i<(x*f[i]()x(ai j=0???????]§m=aC,y*f+++){ar§=a,ar);V(xk[a.x][o¬+1*f*¥q®)=¥t(ai (a¯;j<E;j³nµr;d§Np(¤H¬+µK aM=b®{f/2,y¯;j<h;j³){aj o:´s+=-1}av a}}b ):0);¢nµB;d§N1;·a.y±(i,j,=C§z­[aO])?(,a:´J®;´s+]§l=z;k)/2)+£µL§D(­[j]av ){]µK L(3,$_§1[n](xÃÑrØaB=O(¼B§la.y;¦½¦AÖ={ay}}};a.bk[x][yÃ*f-1tion;i³aB(¥q®<nÐ¦µK M(0,è0,re²1¢o¬¼O§¨ente?¼5>aW)?ë;aG(¦hÅ:a.xµ.*f²Â¤w©i }b ¼rxºg¹Ãºh¹:Ük[a.x)&&ô.y3,bc,-2.5¦z­-1»x=£UùÃºü(£T-£R®{«g©Ä, :;V(x,C§®;:»xº(£U-£SÔSÃ=Øaj s:Êa5++Ñr¤¿ªq:ar²1*f+Â¤¾Ûd§pd.®{«C§ò]§mµ_($_(ene=0=´A[æ]Ï§¤¾(¤4®ó[gû][jO­§h)Ò=1ªextre(K>=JÐK'E®Y®y?fillÀôÊ«¦ath?Á»æ",
-""]]));
-
-</script>
-
-</body>
-</html>
