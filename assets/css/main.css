@@ -165,13 +165,30 @@ body {
     letter-spacing: .15ch;
     font-weight: 400
 }
-
+/* 
 @media (width <= 1040px) {
    .post-content {
     margin-left: 0px;
   }
-}
+} */
 
 @media only screen and (pointer: coarse){
+  .post-img {
+    width: 380px;
+  }
 
+  .post-content {
+    width: 380px;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (pointer: coarse) and (max-width: 380px){
+  .post-img {
+    width: 350px;
+  }
+
+  .post-content {
+    width: 350px;
+  }
 }
