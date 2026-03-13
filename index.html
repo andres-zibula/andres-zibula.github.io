@@ -1,162 +1,541 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
-  <title>Andres's Website</title>
-  <meta name= "description" content="Andres Zibula's Website">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrés Zibula — Software & Embedded Systems Engineer</title>
+  <meta name="description" content="Portfolio of Andrés Zibula — Robotics, AI/ML, Embedded Systems, Creative Code">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="/assets/css/main.css">
-  <!-- <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
-  <!--<script type="text/javascript" src="/assets/js/jquery-3.2.1.min.js"></script> -->
-  <!-- <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script> -->
-  <script type="text/javascript" src="/assets/js/particles.min.js"></script>
 </head>
-<body><main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
-  <h1>Andres's Website</h1><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/scara-plotter.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>SCARA Plotter</h3>
-          <p>One arm SCARA plotter, using stepper motors and STM32. This project consist of a STM32 firmware that interprets G-code coming from Serial port and moves the arm using the stepper motors, and a python script that reads a G-code file from the PC and sends the instructions via Serial to the STM32.</p>
-          <div class="links"><img src="/assets/img/github-mark-white.svg" alt="">
-            <a href="https://github.com/andres-zibula/scara-plotter">Github Repo</a><img src="/assets/img/youtube_social_icon_red.png" alt="">
-            <a href="https://youtu.be/raUs05iYUmI">Youtube video</a></div><span class="tag tag-sm">C</span><span class="tag tag-sm">STM32</span><span class="tag tag-sm">Electronics</span><span class="tag tag-sm">Python</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/parallel_scara_v3.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>Parallel SCARA Plotter v3</h3>
-          <p>Third version of my plotter, this one using stepper motors and STM32.</p>
-          <div class="links"><img src="/assets/img/github-mark-white.svg" alt="">
-            <a href="https://github.com/andres-zibula/parallel-scara-v3">Github Repo</a><img src="/assets/img/youtube_social_icon_red.png" alt="">
-            <a href="https://youtu.be/4yyozFsPI_I">Youtube video</a></div><span class="tag tag-sm">C</span><span class="tag tag-sm">STM32</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/parallel_scara_v2.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>Parallel SCARA Plotter v2</h3>
-          <p>Second version of my plotter, this time 3D printed. Note the bad precision/resolution is due to the cheap 9g servos.</p>
-          <div class="links"><img src="/assets/img/github-mark-white.svg" alt="">
-            <a href="https://github.com/andres-zibula/Parallel-SCARA-Plotter-v2">Github Repo</a><img src="/assets/img/youtube_social_icon_red.png" alt="">
-            <a href="https://youtu.be/a46DMy_3xc4">Youtube video</a></div><span class="tag tag-sm">C++</span><span class="tag tag-sm">Arduino</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/2048_game_robot.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>2048 Game Robot</h3>
-          <p>It is a robot that plays the game 2048 in a smartphone, it uses the built-in camera of the notebook to capture the images, then it processes them to get the matrix of numbers of the game board, after that through a Neural Network it decides what action to take. Finally the program sends signals to the Arduino to slide the stylus pen in the correct direction.</p>
-          <div class="links"><img src="/assets/img/github-mark-white.svg" alt="">
-            <a href="https://github.com/andres-zibula/2048-game-robot">Github Repo</a><img src="/assets/img/youtube_social_icon_red.png" alt="">
-            <a href="https://youtu.be/B5Zup7bcReA">Youtube video</a></div><span class="tag tag-sm">Python</span><span class="tag tag-sm">PyEvolve</span><span class="tag tag-sm">PyBrain</span><span class="tag tag-sm">OpenCV</span><span class="tag tag-sm">Arduino</span><span class="tag tag-sm">C</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/2048_game_ai.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>2048 Game AI</h3>
-          <p>This is a implementation of an AI for the game 2048, currently it is using a neural network with a genetic algorithm for weight balancing.</p>
-          <div class="links"><img src="/assets/img/github-mark-white.svg" alt="">
-            <a href="https://github.com/andres-zibula/2048-game-ai">Github Repo</a></div><span class="tag tag-sm">Python</span><span class="tag tag-sm">PyEvolve</span><span class="tag tag-sm">PyBrain</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/panda_ann.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>3D Multilayer Perceptron Demo</h3>
-          <p>Each panda has a Multilayer Perceptron consisting of 14 inputs, 2 hidden layers of 12 and 6 neurons respectively, and 2 outputs. Each panda has a sight of range that is divided in 7 frustums, each frustum represents 2 inputs for the net, the first input is a normalized distance in the range of 0 and 1 between the panda and an object inside the frustum, and the second input depends on the type of object, -1 for a spike, 0 for nothing and 1 for carrot.</p>
-          <div class="links"><img src="/assets/img/github-mark-white.svg" alt="">
-            <a href="https://github.com/andres-zibula/ann-ga-demo">Github Repo</a><img src="/assets/img/youtube_social_icon_red.png" alt="">
-            <a href="https://youtu.be/LUmBC9SyrYM">Youtube video</a></div><span class="tag tag-sm">Python</span><span class="tag tag-sm">MLP</span><span class="tag tag-sm">PyEvolve</span><span class="tag tag-sm">PyBrain</span><span class="tag tag-sm">Panda3D</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/ann_car_demo.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>Artificial Neural Networks Demo</h3>
-          <p>Each car has a Neural Network with 7 inputs, 1 hidden layer and 2 outputs, the weights are balanced with a Genetic Algorithm. Written from scratch in Python. Graphics with PyGame.</p>
-          <div class="links"><img src="/assets/img/github-mark-white.svg" alt="">
-            <a href="https://github.com/andres-zibula/ann-car-demo">Github Repo</a><img src="/assets/img/youtube_social_icon_red.png" alt="">
-            <a href="https://youtu.be/vvvgfELcdqg">Youtube video</a></div><span class="tag tag-sm">Perceptron</span><span class="tag tag-sm">Genetic Algorithm</span><span class="tag tag-sm">Python</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/ogre_demo.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>3D Game</h3>
-          <p>It is a 3D cross-platform single player action role-playing game written in C++ using <a href='http://www.ogre3d.org/'>Ogre3D</a> as the rendering engine, OIS for input and MyGUI for the Graphical User Interface.</p>
-          <div class="links"><img src="/assets/img/github-mark-white.svg" alt="">
-            <a href="https://github.com/andres-zibula/ogre-3d-game">Github Repo</a><img src="/assets/img/youtube_social_icon_red.png" alt="">
-            <a href="https://youtu.be/VrQoPW1Dkp0">Youtube video</a></div><span class="tag tag-sm">C++</span><span class="tag tag-sm">Ogre3D</span><span class="tag tag-sm">MyGUI</span><span class="tag tag-sm">OIS</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/ga_demo.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>Genetic Algorithm Demo</h3>
-          <p>The goal is to make the cars (triangles) to drive on the roads. Written from scratch in JavaScript.</p>
-          <div class="links"><img src="/assets/img/github-mark-white.svg" alt="">
-            <a href="https://github.com/andres-zibula/js-cars-ga-demo">Github Repo</a><a href="/assets/demos/ga_demo/ga_demo.html">Online Demo</a></div><span class="tag tag-sm">JavaScript</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/parallel_scara.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>Parallel SCARA Plotter</h3>
-          <p>Parallel SCARA Plotter with Servos made with wooden sticks, hot glue and elastic bands. Programming in C using Arduino.</p>
-          <div class="links"><img src="/assets/img/youtube_social_icon_red.png" alt="">
-            <a href="https://youtu.be/VjDGl-4V2Bc">Youtube video</a></div><span class="tag tag-sm">C</span><span class="tag tag-sm">Arduino</span><span class="tag tag-sm">Electronics</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/gameoflife_demo.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>Game of Life</h3>
-          <p>An implementation with <a href='https://www.libsdl.org/'>SDL</a> of the best-known two-dimensional cellular automaton, invented by John H. Conway.</p>
-          <div class="links"><img src="/assets/img/github-mark-white.svg" alt="">
-            <a href="https://github.com/andres-zibula/game-of-life">Github Repo</a><img src="/assets/img/youtube_social_icon_red.png" alt="">
-            <a href="https://youtu.be/4MOsXbzXYgc">Youtube video</a></div><span class="tag tag-sm">C</span><span class="tag tag-sm">SDL</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/people_detection.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>OpenCV People Detection</h3>
-          <p>The goal is to detect people in real time. Dataset from <a href='http://www.cvg.reading.ac.uk/PETS2009/a.html'>PETS 2009.</a></p>
-          <div class="links"><img src="/assets/img/youtube_social_icon_red.png" alt="">
-            <a href="https://youtu.be/S-oGhJutdVU">Youtube video</a></div><span class="tag tag-sm">C++</span><span class="tag tag-sm">OpenCV</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/a_star_demo.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>A* Search Algorithm</h3>
-          <p>A* is one of the most popular methods for finding the shortest path between two locations in a mapped area. Written in JavaScript.</p>
-          <div class="links"><a href="/assets/demos/a_star_demo/a_star_demo.html">Online Demo</a></div><span class="tag tag-sm">JavaScript</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/snake_demo.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>Snake</h3>
-          <p>A implementation in HTML5 and JavaScript of the game Snake.</p>
-          <div class="links"><a href="/assets/demos/snake_demo/snake_demo.html">Online Demo</a></div><span class="tag tag-sm">JavaScript</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/ogame_bot.jpg" alt="">
-        </div>
-        <div class="post-content">
-          <h3>OGame Bot</h3>
-          <p>This program simulates a human playing the online browser game OGame.</p>
-          <div class="links"></div><span class="tag tag-sm">Python</span><span class="tag tag-sm">Selenium</span></div></div><div class="post">
-        <div class="post-img">
-          <img src="/assets/img/projects/breakout_demo.gif" alt="">
-        </div>
-        <div class="post-content">
-          <h3>Breakout</h3>
-          <p>A implementation in HTML5 and JavaScript of the game Breakout.</p>
-          <div class="links"><a href="/assets/demos/breakout_demo/breakout_demo.html">Online Demo</a></div><span class="tag tag-sm">JavaScript</span></div></div></div>
+<body><header class="site-header" id="site-header" role="banner">
+  <nav class="nav-inner" aria-label="Primary navigation">
+    <a class="nav-logo" href="/" aria-label="Andrés Zibula — home">
+      <span class="nav-logo-bracket">[</span>az<span class="nav-logo-bracket">]</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="https://blog.andreszibula.dev/" class="nav-link" target="_blank" rel="noopener noreferrer">Blog</a></li>
+      <li><a href="https://github.com/andres-zibula" class="nav-link nav-link--cta" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+  </nav>
+</header>
+<main aria-label="Content">
+      <!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="hero" id="hero" aria-label="Introduction">
+  <div class="hero-bg" aria-hidden="true">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-noise"></div>
+  </div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow"><span class="accent">&gt;</span> Hello, world.</p>
+    <h1 class="hero-name">Andrés<br>Zibula</h1>
+    <p class="hero-role">
+      Software Engineer &amp; Tinkerer
+    </p>
+    <p class="hero-typewriter" aria-live="polite">
+      <span class="typewriter-prefix">// </span><span id="typewriter-text"></span><span class="typewriter-cursor"
+        aria-hidden="true">|</span>
+    </p>
+    <p class="hero-bio">
+      Senior engineer by profession, builder by compulsion — from Kafka pipelines to stepper motors.
+    </p>
+    <div class="hero-cta" role="list">
+      <a href="#projects" class="btn btn--primary" role="listitem">View Projects</a>
+      <a href="https://github.com/andres-zibula" class="btn btn--ghost" target="_blank" rel="noopener noreferrer"
+        role="listitem">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+  <a href="#projects" class="hero-scroll-hint" aria-label="Scroll to projects">
+    <span class="hero-scroll-arrow" aria-hidden="true"></span>
+  </a>
+</section>
 
-<div class="grad"></div>
-<div id="particles-js"></div>
+<!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+<section class="projects-section" id="projects" aria-labelledby="projects-heading">
+  <div class="section-inner">
+    <header class="section-header">
+      <h2 class="section-title" id="projects-heading">
+        <span class="accent">01.</span> Projects
+      </h2>
+      <p class="section-sub">A selection of things I've built</p>
+    </header>
 
+    <!-- Filter bar -->
+    <div class="filter-bar" role="group" aria-label="Filter projects by category">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="robotics">Robotics</button>
+      <button class="filter-btn" data-filter="aiml">AI / ML</button>
+      <button class="filter-btn" data-filter="games">Games</button>
+      <button class="filter-btn" data-filter="python">Python</button>
+    </div>
+
+    <!-- Project grid -->
+    <ul class="projects-grid" role="list" id="projects-grid"><li class="project-card reveal" data-category="robotics" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/scara-plotter.gif" alt="SCARA Plotter" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">SCARA Plotter</h3>
+          <p class="card-desc">One arm SCARA plotter, using stepper motors and STM32. This project consist of a STM32 firmware that interprets G-code coming from Serial port and moves the arm using the stepper motors, and a python script that reads a G-code file from the PC and sends the instructions via Serial to the STM32.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">C</li><li class="tag-pill" role="listitem">STM32</li><li class="tag-pill" role="listitem">Electronics</li><li class="tag-pill" role="listitem">Python</li></ul>
+          <div class="card-links"><a class="card-link" href="https://github.com/andres-zibula/scara-plotter" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub repository for SCARA Plotter">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a><a class="card-link" href="https://youtu.be/raUs05iYUmI" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube video for SCARA Plotter">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8zM9.75 15.5v-7l6.25 3.5-6.25 3.5z" />
+              </svg>
+              YouTube
+            </a></div>
+        </div>
+      </li><li class="project-card reveal" data-category="robotics" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/parallel_scara_v3.gif" alt="Parallel SCARA Plotter v3" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Parallel SCARA Plotter v3</h3>
+          <p class="card-desc">Third version of my plotter, this one using stepper motors and STM32.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">C</li><li class="tag-pill" role="listitem">STM32</li></ul>
+          <div class="card-links"><a class="card-link" href="https://github.com/andres-zibula/parallel-scara-v3" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub repository for Parallel SCARA Plotter v3">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a><a class="card-link" href="https://youtu.be/4yyozFsPI_I" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube video for Parallel SCARA Plotter v3">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8zM9.75 15.5v-7l6.25 3.5-6.25 3.5z" />
+              </svg>
+              YouTube
+            </a></div>
+        </div>
+      </li><li class="project-card reveal" data-category="robotics" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/parallel_scara_v2.gif" alt="Parallel SCARA Plotter v2" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Parallel SCARA Plotter v2</h3>
+          <p class="card-desc">Second version of my plotter, this time 3D printed. Note the bad precision/resolution is due to the cheap 9g servos.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">C++</li><li class="tag-pill" role="listitem">Arduino</li></ul>
+          <div class="card-links"><a class="card-link" href="https://github.com/andres-zibula/Parallel-SCARA-Plotter-v2" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub repository for Parallel SCARA Plotter v2">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a><a class="card-link" href="https://youtu.be/a46DMy_3xc4" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube video for Parallel SCARA Plotter v2">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8zM9.75 15.5v-7l6.25 3.5-6.25 3.5z" />
+              </svg>
+              YouTube
+            </a></div>
+        </div>
+      </li><li class="project-card reveal" data-category="robotics" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/2048_game_robot.gif" alt="2048 Game Robot" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">2048 Game Robot</h3>
+          <p class="card-desc">It is a robot that plays the game 2048 in a smartphone, it uses the built-in camera of the notebook to capture the images, then it processes them to get the matrix of numbers of the game board, after that through a Neural Network it decides what action to take. Finally the program sends signals to the Arduino to slide the stylus pen in the correct direction.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">Python</li><li class="tag-pill" role="listitem">PyEvolve</li><li class="tag-pill" role="listitem">PyBrain</li><li class="tag-pill" role="listitem">OpenCV</li><li class="tag-pill" role="listitem">Arduino</li><li class="tag-pill" role="listitem">C</li></ul>
+          <div class="card-links"><a class="card-link" href="https://github.com/andres-zibula/2048-game-robot" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub repository for 2048 Game Robot">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a><a class="card-link" href="https://youtu.be/B5Zup7bcReA" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube video for 2048 Game Robot">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8zM9.75 15.5v-7l6.25 3.5-6.25 3.5z" />
+              </svg>
+              YouTube
+            </a></div>
+        </div>
+      </li><li class="project-card reveal" data-category="aiml" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/2048_game_ai.gif" alt="2048 Game AI" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">2048 Game AI</h3>
+          <p class="card-desc">This is a implementation of an AI for the game 2048, currently it is using a neural network with a genetic algorithm for weight balancing.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">Python</li><li class="tag-pill" role="listitem">PyEvolve</li><li class="tag-pill" role="listitem">PyBrain</li></ul>
+          <div class="card-links"><a class="card-link" href="https://github.com/andres-zibula/2048-game-ai" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub repository for 2048 Game AI">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a></div>
+        </div>
+      </li><li class="project-card reveal" data-category="aiml" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/panda_ann.gif" alt="3D Multilayer Perceptron Demo" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">3D Multilayer Perceptron Demo</h3>
+          <p class="card-desc">Each panda has a Multilayer Perceptron consisting of 14 inputs, 2 hidden layers of 12 and 6 neurons respectively, and 2 outputs. Each panda has a sight of range that is divided in 7 frustums, each frustum represents 2 inputs for the net, the first input is a normalized distance in the range of 0 and 1 between the panda and an object inside the frustum, and the second input depends on the type of object, -1 for a spike, 0 for nothing and 1 for carrot.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">Python</li><li class="tag-pill" role="listitem">MLP</li><li class="tag-pill" role="listitem">PyEvolve</li><li class="tag-pill" role="listitem">PyBrain</li><li class="tag-pill" role="listitem">Panda3D</li></ul>
+          <div class="card-links"><a class="card-link" href="https://github.com/andres-zibula/ann-ga-demo" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub repository for 3D Multilayer Perceptron Demo">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a><a class="card-link" href="https://youtu.be/LUmBC9SyrYM" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube video for 3D Multilayer Perceptron Demo">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8zM9.75 15.5v-7l6.25 3.5-6.25 3.5z" />
+              </svg>
+              YouTube
+            </a></div>
+        </div>
+      </li><li class="project-card reveal" data-category="aiml" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/ann_car_demo.gif" alt="Artificial Neural Networks Demo" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Artificial Neural Networks Demo</h3>
+          <p class="card-desc">Each car has a Neural Network with 7 inputs, 1 hidden layer and 2 outputs, the weights are balanced with a Genetic Algorithm. Written from scratch in Python. Graphics with PyGame.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">Perceptron</li><li class="tag-pill" role="listitem">Genetic Algorithm</li><li class="tag-pill" role="listitem">Python</li></ul>
+          <div class="card-links"><a class="card-link" href="https://github.com/andres-zibula/ann-car-demo" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub repository for Artificial Neural Networks Demo">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a><a class="card-link" href="https://youtu.be/vvvgfELcdqg" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube video for Artificial Neural Networks Demo">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8zM9.75 15.5v-7l6.25 3.5-6.25 3.5z" />
+              </svg>
+              YouTube
+            </a></div>
+        </div>
+      </li><li class="project-card reveal" data-category="games" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/ogre_demo.gif" alt="3D Game" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">3D Game</h3>
+          <p class="card-desc">It is a 3D cross-platform single player action role-playing game written in C++ using <a href='http://www.ogre3d.org/'>Ogre3D</a> as the rendering engine, OIS for input and MyGUI for the Graphical User Interface.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">C++</li><li class="tag-pill" role="listitem">Ogre3D</li><li class="tag-pill" role="listitem">MyGUI</li><li class="tag-pill" role="listitem">OIS</li></ul>
+          <div class="card-links"><a class="card-link" href="https://github.com/andres-zibula/ogre-3d-game" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub repository for 3D Game">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a><a class="card-link" href="https://youtu.be/VrQoPW1Dkp0" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube video for 3D Game">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8zM9.75 15.5v-7l6.25 3.5-6.25 3.5z" />
+              </svg>
+              YouTube
+            </a></div>
+        </div>
+      </li><li class="project-card reveal" data-category="games" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/ga_demo.gif" alt="Genetic Algorithm Demo" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Genetic Algorithm Demo</h3>
+          <p class="card-desc">The goal is to make the cars (triangles) to drive on the roads. Written from scratch in JavaScript.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">JavaScript</li></ul>
+          <div class="card-links"><a class="card-link" href="https://github.com/andres-zibula/js-cars-ga-demo" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub repository for Genetic Algorithm Demo">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a><a class="card-link card-link--demo" href="/assets/demos/ga_demo/ga_demo.html" target="_blank"
+              rel="noopener noreferrer" aria-label="Live demo for Genetic Algorithm Demo">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              Demo
+            </a></div>
+        </div>
+      </li><li class="project-card reveal" data-category="robotics" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/parallel_scara.gif" alt="Parallel SCARA Plotter" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Parallel SCARA Plotter</h3>
+          <p class="card-desc">Parallel SCARA Plotter with Servos made with wooden sticks, hot glue and elastic bands. Programming in C using Arduino.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">C</li><li class="tag-pill" role="listitem">Arduino</li><li class="tag-pill" role="listitem">Electronics</li></ul>
+          <div class="card-links"><a class="card-link" href="https://youtu.be/VjDGl-4V2Bc" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube video for Parallel SCARA Plotter">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8zM9.75 15.5v-7l6.25 3.5-6.25 3.5z" />
+              </svg>
+              YouTube
+            </a></div>
+        </div>
+      </li><li class="project-card reveal" data-category="games" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/gameoflife_demo.gif" alt="Game of Life" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Game of Life</h3>
+          <p class="card-desc">An implementation with <a href='https://www.libsdl.org/'>SDL</a> of the best-known two-dimensional cellular automaton, invented by John H. Conway.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">C</li><li class="tag-pill" role="listitem">SDL</li></ul>
+          <div class="card-links"><a class="card-link" href="https://github.com/andres-zibula/game-of-life" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub repository for Game of Life">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a><a class="card-link" href="https://youtu.be/4MOsXbzXYgc" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube video for Game of Life">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8zM9.75 15.5v-7l6.25 3.5-6.25 3.5z" />
+              </svg>
+              YouTube
+            </a></div>
+        </div>
+      </li><li class="project-card reveal" data-category="aiml" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/people_detection.gif" alt="OpenCV People Detection" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">OpenCV People Detection</h3>
+          <p class="card-desc">The goal is to detect people in real time. Dataset from <a href='http://www.cvg.reading.ac.uk/PETS2009/a.html'>PETS 2009.</a></p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">C++</li><li class="tag-pill" role="listitem">OpenCV</li></ul>
+          <div class="card-links"><a class="card-link" href="https://youtu.be/S-oGhJutdVU" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube video for OpenCV People Detection">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8zM9.75 15.5v-7l6.25 3.5-6.25 3.5z" />
+              </svg>
+              YouTube
+            </a></div>
+        </div>
+      </li><li class="project-card reveal" data-category="games" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/a_star_demo.gif" alt="A* Search Algorithm" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">A* Search Algorithm</h3>
+          <p class="card-desc">A* is one of the most popular methods for finding the shortest path between two locations in a mapped area. Written in JavaScript.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">JavaScript</li></ul>
+          <div class="card-links"><a class="card-link card-link--demo" href="/assets/demos/a_star_demo/a_star_demo.html" target="_blank"
+              rel="noopener noreferrer" aria-label="Live demo for A* Search Algorithm">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              Demo
+            </a></div>
+        </div>
+      </li><li class="project-card reveal" data-category="games" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/snake_demo.gif" alt="Snake" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Snake</h3>
+          <p class="card-desc">A implementation in HTML5 and JavaScript of the game Snake.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">JavaScript</li></ul>
+          <div class="card-links"><a class="card-link card-link--demo" href="/assets/demos/snake_demo/snake_demo.html" target="_blank"
+              rel="noopener noreferrer" aria-label="Live demo for Snake">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              Demo
+            </a></div>
+        </div>
+      </li><li class="project-card reveal" data-category="python" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/ogame_bot.jpg" alt="OGame Bot" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">OGame Bot</h3>
+          <p class="card-desc">This program simulates a human playing the online browser game OGame.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">Python</li><li class="tag-pill" role="listitem">Selenium</li></ul>
+          <div class="card-links"></div>
+        </div>
+      </li><li class="project-card reveal" data-category="games" role="listitem">
+        <div class="card-media">
+          <img src="/assets/img/projects/breakout_demo.gif" alt="Breakout" loading="lazy" width="480"
+            height="270">
+          <div class="card-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Breakout</h3>
+          <p class="card-desc">A implementation in HTML5 and JavaScript of the game Breakout.</p>
+          <ul class="card-tags" role="list" aria-label="Technologies used"><li class="tag-pill" role="listitem">JavaScript</li></ul>
+          <div class="card-links"><a class="card-link card-link--demo" href="/assets/demos/breakout_demo/breakout_demo.html" target="_blank"
+              rel="noopener noreferrer" aria-label="Live demo for Breakout">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              Demo
+            </a></div>
+        </div>
+      </li></ul>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+<section class="about-section" id="about" aria-labelledby="about-heading">
+  <div class="section-inner">
+    <header class="section-header">
+      <h2 class="section-title" id="about-heading">
+        <span class="accent">02.</span> About
+      </h2>
+    </header>
+    <div class="about-grid">
+      <div class="about-bio reveal">
+        <p>
+          I'm Andrés, a Senior Software Engineer with 10+ years building distributed systems, event-driven
+          architectures, and high-throughput APIs — but this site is where I keep the other side of my work.
+        </p>
+        <p>
+          Here you'll find robotic arms that draw with G-code, neural networks trained by genetic algorithms, and
+          physical robots that play mobile games. Projects built out of curiosity, not deadlines.
+        </p>
       </div>
-    </main><script type="text/javascript">
-particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":789.1476416322727}},"color":{"value":"#26f226"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#82ff82","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":251.74825174825176,"line_linked":{"opacity":0.7609425974047004}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles,  update; update = function() { requestAnimationFrame(update); }; requestAnimationFrame(update);;
-</script></body>
+      <div class="about-skills reveal">
+        <h3 class="skills-heading">// tech I work with</h3>
+        <div class="skills-sections"><div class="skill-section">
+            <h4 class="skill-category-title">Languages</h4>
+            <div class="skills-grid" role="list" aria-label="Languages Technologies"><span class="skill-pill" role="listitem">C/C++</span><span class="skill-pill" role="listitem">Java</span><span class="skill-pill" role="listitem">Python</span><span class="skill-pill" role="listitem">JavaScript / TypeScript</span><span class="skill-pill" role="listitem">SQL</span></div>
+          </div><div class="skill-section">
+            <h4 class="skill-category-title">Backend</h4>
+            <div class="skills-grid" role="list" aria-label="Backend Technologies"><span class="skill-pill" role="listitem">Spring Boot</span><span class="skill-pill" role="listitem">Django</span><span class="skill-pill" role="listitem">Flask</span><span class="skill-pill" role="listitem">Node.js</span></div>
+          </div><div class="skill-section">
+            <h4 class="skill-category-title">Distributed Systems</h4>
+            <div class="skills-grid" role="list" aria-label="Distributed Systems Technologies"><span class="skill-pill" role="listitem">Apache Kafka</span><span class="skill-pill" role="listitem">Apache Spark</span><span class="skill-pill" role="listitem">event-driven architecture</span><span class="skill-pill" role="listitem">microservices</span></div>
+          </div><div class="skill-section">
+            <h4 class="skill-category-title">Databases</h4>
+            <div class="skills-grid" role="list" aria-label="Databases Technologies"><span class="skill-pill" role="listitem">PostgreSQL</span><span class="skill-pill" role="listitem">Oracle</span><span class="skill-pill" role="listitem">MySQL</span><span class="skill-pill" role="listitem">MongoDB</span><span class="skill-pill" role="listitem">Cassandra</span><span class="skill-pill" role="listitem">AWS Redshift</span><span class="skill-pill" role="listitem">DynamoDB</span></div>
+          </div><div class="skill-section">
+            <h4 class="skill-category-title">Cloud & DevOps</h4>
+            <div class="skills-grid" role="list" aria-label="Cloud & DevOps Technologies"><span class="skill-pill" role="listitem">AWS</span><span class="skill-pill" role="listitem">Kubernetes</span><span class="skill-pill" role="listitem">Docker</span><span class="skill-pill" role="listitem">GitLab CI/CD</span></div>
+          </div><div class="skill-section">
+            <h4 class="skill-category-title">Frontend / Mobile</h4>
+            <div class="skills-grid" role="list" aria-label="Frontend / Mobile Technologies"><span class="skill-pill" role="listitem">Angular</span><span class="skill-pill" role="listitem">React</span><span class="skill-pill" role="listitem">React Native</span></div>
+          </div><div class="skill-section">
+            <h4 class="skill-category-title">Other</h4>
+            <div class="skills-grid" role="list" aria-label="Other Technologies"><span class="skill-pill" role="listitem">Embedded systems (C/C++, STM32)</span><span class="skill-pill" role="listitem">Computer Vision (OpenCV)</span><span class="skill-pill" role="listitem">Neural Networks</span></div>
+          </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+    </main><footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <p class="footer-copy">
+      <span class="footer-accent">// </span>Andrés Zibula &copy; 2026
+    </p>
+    <ul class="footer-links" role="list">
+      <li>
+        <a href="https://blog.andreszibula.dev/" target="_blank" rel="noopener noreferrer" aria-label="Blog">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.127 22.562l-7.127 1.438 1.438-7.128 5.689 5.69zm1.414-1.414l11.228-11.225-5.69-5.692-11.227 11.227 5.689 5.69zm9.768-21.148l-2.816 2.817 5.691 5.691 2.816-2.819-5.692-5.689z"/>
+          </svg>
+          Blog
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/andres-zibula" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer><script src="/assets/js/main.js" defer></script>
+  </body>
 
 </html>
